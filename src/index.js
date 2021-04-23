@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import IntroCard from "./components/IntroCard";
+import CardComponent from "./components/CardComponent";
+import TopBar from "./components/TopBar";
+import styles from "./styles.module.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <div className={styles.mainContainer}>
+      <TopBar firstName="Gary " lastInitial=" R." />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      <div className={styles.header}>
+        <IntroCard />
+      </div>
+
+      <div className={styles.body}>
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+      </div>
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector("#root"));

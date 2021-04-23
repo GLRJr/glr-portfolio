@@ -1,0 +1,36 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.yourNameContainer {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.yourNameContainer h1{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+   
+    
+}
+
+.initial {
+    color:#F15060;
+}
+
+.homeBar{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 289px;
+    height: 19px;
+    left: 1052px;
+}
+
+.homeBar h5 {
+    padding: 10px;
+}
